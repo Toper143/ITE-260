@@ -1,0 +1,83 @@
+import calendar
+from colorama import Fore, Style
+
+def display_calendar(yy, mm, highlighted_days):
+    cal = calendar.monthcalendar(yy, mm)
+    print(calendar.month_name[mm], yy)
+    print("Mo Tu We Th Fr Sa Su")
+    for week in cal:
+        for day in week:
+            if day == 0:
+                print("  ", end=" ")
+            elif day in highlighted_days:
+                print(f"{Fore.RED}{day:2}{Style.RESET_ALL}", end=" ")
+            else:
+                print(f"{day:2}", end=" ")
+        print()
+
+gen002 = [6, 13, 20, 27, 2, 9, 16, 23, 30]
+ite366 = [4, 11, 18, 25]
+ite260 = [5, 12, 19, 26, 1, 8, 15, 22, 29]
+ped030 = [2, 9, 16, 23, 30]
+nst021 = [4, 11, 18, 25, 7, 14, 21, 28]
+
+while True:
+  bb = input("Enter a block: ")
+
+  if bb == "2": 
+    yy = int(input("Enter a year: "))
+    mm = int(input("Enter a month: "))
+    subject_code = input("Enter a subject: ")
+    if subject_code == "ITE366":
+      display_calendar(yy, mm, ite366)
+      
+      
+      print("""
+    ITE 366 - Introduction to Computing (Including IT Fundamentals) 
+    Date: Monday
+    Time: 09:00 AM - 05:00 PM""")
+    
+    
+    elif subject_code == "ITE260":
+      display_calendar(yy, mm, ite260)
+      print("""
+    ITE 260 - Computer Programming 1 
+    Date: Tuesday, Friday
+    Time: 08:30 AM - 04:00 PM""")
+  
+    
+    elif subject_code == "PED030":
+      display_calendar(yy, mm, ped030)
+      print("""
+  PED 030 - Physical Activities Toward Health and Fitness (PATHFit 1): Movement Competency Training 
+  Date: Saturday
+  Time: 07:00 AM - 09:00 AM""")
+  
+    
+    elif subject_code == "GEN002":
+      display_calendar(yy, mm, gen002)
+      print("""
+    GEN 002 - Understanding the Self 
+    Date: Wednesday, Saturday
+    Time: 09:00 AM - 04:00 PM""")
+  
+    
+    elif subject_code == "NST021":
+      display_calendar(yy, mm, nst021)
+      print("""
+    NST 021 - National Service Training Program 1 
+    Date: Monday, Thursday
+    Time: 04:00 PM - 05:30 PM""")
+  
+    
+    else:
+      print("Subject not found")
+    
+  elif bb !="2":
+    print("Invalid Block")
+  
+  ii = input("Do you want to continue? Yes / No: ")
+  if ii == "Yes": 
+    continue
+  elif ii == "No" :
+    break
