@@ -1,0 +1,34 @@
+1.) INPUT:
+car= ["FORD", "MAZDA", "TOYOTA","FERRARI","ASTON MARTIN"]
+car.append("KIA")
+car.append("AUDI")
+car.append("SUBARU")
+print (car)
+
+OUTPUT:
+['FORD', 'MAZDA', 'TOYOTA', 'FERRARI', 'ASTON MARTIN', 'KIA', 'AUDI', 'SUBARU']
+
+2.) INPUT:
+motor= ["KAWASAKI", "YAMAHA", "BMW","HONDA","DUCATI"]
+motor.insert(3, "KTM")
+del motor[5]
+print (motor)
+
+OUTPUT:
+['KAWASAKI', 'YAMAHA', 'BMW', 'KTM', 'HONDA']
+
+3.) INPUT:
+fruits= ["MANGO", "BANANA", "ORANGE","APPLE","PINEAPPLE"]
+fruits[4]=("GRAPE")
+print (fruits)
+
+OUTPUT:
+['MANGO', 'BANANA', 'ORANGE', 'APPLE', 'GRAPE']
+
+4.) INPUT:
+animals= ["GIRAFFE", "DOG", "CAT","PARROT","EAGLE"]
+animals.pop(3)
+print (animals)
+
+OUTPUT:
+['GIRAFFE', 'DOG', 'CAT', 'EAGLE']
