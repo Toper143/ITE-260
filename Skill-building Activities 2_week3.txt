@@ -1,0 +1,52 @@
+1.)Input:
+
+num1= int(input("Enter a number:"))
+
+if num1 == 0:
+    print("Neutral")
+elif num1>0:
+    print("Positive")
+else:
+    print("Negative")
+
+
+
+2.)Input:
+
+name=input("Enter the Students name:")
+
+sub1= float(input("Enter the Students 1st grade:"))
+sub2= float(input("Enter the Students 2nd grade:"))
+sub3= float(input("Enter the Students 3rd grade:"))
+sub4= float(input("Enter the Students 4th grade:"))
+sub5= float(input("Enter the Students 5th grade:"))
+
+avrg=(sub1 + sub2 + sub3 + sub4 + sub5)/5
+
+
+if avrg >=85:
+    print("Student name: "+name+", Average grade is: "+str(avrg)+" PASSED AND WITH HIGHEST HONOR!!!!!")
+elif avrg>=80:
+    print("Student name: "+name+", Average grade is: "+str(avrg)+" PASSED AND WITH HONOR!!!!!")
+elif avrg>=75:
+    print("Student name: "+name+", Average grade is: "+str(avrg)+" PASSED")
+else:
+    print("Student name: "+name+", Average grade is: "+str(avrg)+" FAILED!!!!!")
+
+
+
+3.)Input:
+
+name="Toper"
+pswd="Toper123"
+
+name1=input("Enter user name: ")
+
+if name1 == name:
+    pswd1=input("Enter your password: ")
+if name1 != name:
+    print("Unknown user")
+if pswd1 == pswd:
+ print("Log in")
+else:
+  print("Incorrect password")

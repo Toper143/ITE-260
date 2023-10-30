@@ -1,0 +1,38 @@
+1.)Input:
+name= input("Enter your name: ")
+age= int(input("Enter your age:"))
+
+
+print ("Please share the information asked for:\n",name + " " +str(age))
+
+Output:
+
+Enter your name: toper
+Enter your age:19
+Please share the information asked for:
+toper 19
+
+2.) input:
+jj= int(input("Enter a your first number:"))
+cc= int(input("Enter a second number:"))
+rr= jj+cc
+print ("Sum of the two number is",rr)
+
+Output:
+
+Enter a your first number:46
+Enter a second number:76
+Sum of the two number is 122
+
+3.) input:
+car_brand= ["toyota", "mazda", "lambo", "suzuki", "tesla" ]
+car_brand.insert(2,"Nissan")
+print(car_brand)
+car_brand.pop(3)
+print (car_brand)
+
+Output:
+
+['toyota', 'mazda', 'Nissan', 'lambo', 'suzuki', 'tesla']
+['toyota', 'mazda', 'Nissan', 'suzuki', 'tesla']
+
