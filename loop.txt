@@ -1,0 +1,83 @@
+1.)Input:
+n = 10
+while n >=1:
+    print(n)
+    n -= 1
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+2.)Input:
+sum=0
+count=0 
+while count<5:
+        n = int(input("Enter a Number: "))
+        sum += n
+        count += 1
+print("Total: ", sum)
+Output:
+Enter a Number: 2
+Enter a Number: 2
+Enter a Number: 2
+Enter a Number: 2
+Enter a Number: 2
+Total:  10
+
+3.) Input:
+cnum = int(input("Enter a specific number to stop:  "))
+count = 0
+while count <= cnum:
+       print(count)
+       count += 1
+Output:
+Enter a specific number to stop:  10
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+4.) Input:
+cnum = int(input("Enter a specific number to stop:  "))
+num = input("Enter a message: ")
+count = 1
+while count <= cnum and num:
+       print(count and num)
+       count += 1
+Output:
+Enter a specific number to stop:  5
+Enter a message: Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+
+5.)Input:
+secretword = ("Rx-7")
+while True:
+    tot = input("Guess my Secret Word :) :  ")
+    if tot== secretword:
+        print(" You Guessed the Word!!!!!!")
+        break
+    else:
+        print("Awww, Try again")
+Output:
+Guess my Secret Word :) :  porsche
+Awww, Try again
+Guess my Secret Word :) :  Rx-7
+You Guessed the Word!!!!!!
