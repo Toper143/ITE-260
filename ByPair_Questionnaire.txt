@@ -1,0 +1,83 @@
+for i in range(5):
+
+    username = "aigo"
+
+    user = input("Enter your Username: ")
+   
+
+    if username == user:
+        print("Login Successful")
+        break
+    else:
+        print("Login Failed, Try Again")
+
+
+
+score = 30
+counter = 0
+QUESTIONS = [
+    ("1. It enables a particular set of conditions to be executed repeatedly until a condition is satisfied?\n", "for loop"),
+    ("2. A function that either take a single number and behaves like a list?\n", "range"),
+    ("3. The statement used inside the loop to exit out of the loop?\n", "break statement"),
+    ("4. It is a declaration that enables you to ignore the most recent version of any loop?\n", "continue statement"),
+    ("5. The statement that is considered a no-operation statement?\n", "pass statement"),
+    ("6. Loop Controls Statements Control statements in a loop change the order of execution.\n", "false"),
+    ("7. The Continue Statement is used within the loop to exit the loop.\n", "false"),
+    ("8. The Pass Statement is regarded as a no-operation statement, says that it consumes the execution cycle like a legal Python statement, but nothing actually happens. When the command pass is executed.\n", "true"),
+    ("9. WHILE LOOP enables a specific set of conditions to be repeated until a criterion has been met.\n", "false"),
+    ("10. Iterating by sequence index enables a specific set of conditions to be repeated until a criterion has been met.\n", "true"),
+    ("11. The continue statement inserted inside the loop to end it.\n", "false"),
+    ("12. Python programming language allows using one loop inside another loop is called nested loop.\n", "true"),
+    ("13. While Loop is used for sequential traversal.\n", "false"),
+    ("14. Brake statement is useful when we want to terminate the loop as soon the condition is fulfilled instead of doing the remaining iterations.\n", "false"),
+    ("15. Python does not support having an else statement associated with a loop statement.\n", "false"),
+    ("16. The OR operator, like the AND operator, examines multiple conditions. However, it returns True when one or both of the conditions are met. \n", "true"),
+    ("17. The NOT operator is only valid for one condition. True becomes False and False becomes True. \n", "true"),
+    ("18. The AND operator determines whether two criteria are True at the same time. If both conditions are true, it returns True. If either of the conditions is false, it returns False. \n", "true"),
+    ("19. Python evaluates logical operators in the order they are listed when you mix them in an expression, which is known as operator precedence. \n", "true"),
+    ("20. A function that either take a single number and behaves like a list?\n", "range"),
+    ("21. It is a declaration that enables you to ignore the most recent version of any loop?\n", "continue statement"),
+    ("22. FOR LOOP enables a specific set of conditions to be repeated until a criterion has been met.\n", "true"),
+    ("23. Python programming language does not allow using one loop inside another loop is called nested loop.\n", "false"),
+    ("24. The AND operator is only valid for one condition. True becomes False and False becomes True. \n", "false"),
+    ("25. The Continue Statement is regarded as a no-operation statement, says that it consumes the execution cycle like a legal Python statement, but nothing actually happens. When the command pass is executed.\n", "false"),
+    ("26. The statement that is considered a no-operation statement?\n", "pass statement"),
+    ("27. Iterating by sequence index disables a specific set of conditions to be repeated until a criterion has been met.\n", "false"),
+    ("28. The Break Statement is used within the loop to exit the loop.\n", "true"),
+    ("29. FOR Loop is used for sequential traversal.\n", "true"),
+    ("30. A function that either take a single number and behaves like a list?\n", "range"),
+]    
+
+if username == user:
+    print("========== QUIZ 1 ==========")
+    for question, correct_answer in QUESTIONS:
+        answer = input(f"{question} Answer: ")
+        counter += 1
+
+        if answer.lower() == correct_answer:
+            print("Correct!")
+        else:
+            print(f"The answer is {correct_answer}")
+            score -= 1
+        if counter == 10:
+            print()
+            print("========== QUIZ 2 ==========")
+            print()
+        if counter == 20:
+            print()
+            print("========== QUIZ 3 ==========")
+            print()
+
+
+if username == user:
+    ave = 30 / 3
+    print(f"Score: {score}")
+    print(f"Average: {ave}")
+    if score >= 15 and score <= 20:
+        print("You Passed, Well Done!")
+    elif score >= 20 and score <= 25:
+        print("You did great!")
+    elif score == 30:
+        print("Wow, Perfect!")
+    elif score <=15:
+        print("You did well!")
